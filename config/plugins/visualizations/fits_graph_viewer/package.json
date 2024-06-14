@@ -1,0 +1,16 @@
+{
+    "name": "fits-graph-visualization",
+    "version": "0.1.0",
+    "keywords": [
+        "galaxy",
+        "visualization"
+    ],
+    "license": "AFL-3.0",
+    "dependencies": {
+        "webpack": "^5.90.3",
+        "webpack-cli": "^5.1.4"
+    },
+    "scripts": {
+        "build": "cd src && npx webpack build --config webpack.prod.js --output-path=../static/astrovis && cp _vendors/fits-reader.js ../static/"
+    }
+}
